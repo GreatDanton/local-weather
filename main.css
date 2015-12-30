@@ -1,0 +1,103 @@
+* {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+body {
+  font-family: 'Roboto';
+  font-size: 18px;
+  background: url("http://7-themes.com/data_images/out/18/6830467-cloudy-sky-background.jpg") no-repeat center center fixed;
+
+}
+
+h1, h2, h3, h4 {
+}
+
+p {
+  font-family: 'Roboto'
+  font-size: 18px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  margin-top: 150px;
+  padding: 20px 0;
+  color: #fff;
+text-shadow:
+ -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+   1px 1px 0 #000;
+}
+
+.temp {
+  font-size: 3em;
+  margin: 20px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description {
+  text-transform: uppercase;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.city {
+  text-align: center;
+  margin: 20px 0 40px;
+}
+
+.pressure {
+  display: flex;
+  justify-content: center;
+}
+
+.pressure p {
+  padding: 20px;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.switch {
+  margin-top: 40px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  max-width: 120px;
+  min-height: 48px;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  position: relative;
+  margin: 60px auto 0;
+}
+
+.switch p {
+  width: 50%;
+  user-select: none;
+  -moz-user-select: none;
+}
+
+button {
+  background-color: #127fc9;
+  width: 50%;
+  height: 44px;
+  left: 2px;
+  top: 2px;
+  position: absolute;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Roboto';
+}
+
+.right {
+  transform: translateX(56px);
+}
