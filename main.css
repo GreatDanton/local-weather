@@ -7,7 +7,7 @@ body {
   font-family: 'Roboto';
   font-size: 18px;
   background: url("http://7-themes.com/data_images/out/18/6830467-cloudy-sky-background.jpg") no-repeat center center fixed;
-
+  background-size: cover;
 }
 
 h1, h2, h3, h4 {

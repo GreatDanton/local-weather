@@ -18,6 +18,21 @@ $(document).ready(function() {
         $('.description').text(json.weather[0].description);
         $('.city').text(json.name);
         $('.pressure').html("<p><span class='light'>Pressure: </span>" + json.main.pressure +" hPa</p>" + " " + "<p><span class='light'>Humidity: </span>" + json.main.humidity + " %</p>");
+
+        var weather = json.weather[0].description
+        if (weather.indexOf('cloud') > -1 ) {
+            $('body').css("background", "url('http://7-themes.com/data_images/out/18/6830467-cloudy-sky-background.jpg') no-repeat center center fixed");
+
+        } else if (weather.indexOf('mist') > -1) {
+             $('body').css("background", "url('http://www.cmblackwood.com/images/fog_3_.jpg')");
+        } else if (weather.indexOf('sun') > -1) {
+          $('body').css("background", "url('https://blakewd.files.wordpress.com/2015/02/sunny-day-wallpaper.jpg')");
+        } else if (weather.indexOf('snow') > -1) {
+          $('body').css("background", "url('http://miriadna.com/desctopwalls/images/max/Snowy-bridge.jpg')");
+        }
+
+        $('body').css("background-size", "cover");
+
       });
     });
   }
@@ -25,7 +40,7 @@ $(document).ready(function() {
 
   var unit = 'metric';
   geolocation();
-  
+
   $('.switch').click(function(){
     if ($('button').hasClass("right")) {
       $('button').removeClass("right");
