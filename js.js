@@ -24,11 +24,11 @@ $(document).ready(function() {
             $('body').css("background", "url('http://7-themes.com/data_images/out/18/6830467-cloudy-sky-background.jpg') no-repeat center center fixed");
 
         } else if (weather.indexOf('mist') > -1) {
-             $('body').css("background", "url('http://www.cmblackwood.com/images/fog_3_.jpg')");
+             $('body').css("background", "url('http://www.cmblackwood.com/images/fog_3_.jpg') no-repeat center center fixed");
         } else if (weather.indexOf('sun') > -1) {
-          $('body').css("background", "url('https://blakewd.files.wordpress.com/2015/02/sunny-day-wallpaper.jpg')");
+          $('body').css("background", "url('https://blakewd.files.wordpress.com/2015/02/sunny-day-wallpaper.jpg') no-repeat center center fixed");
         } else if (weather.indexOf('snow') > -1) {
-          $('body').css("background", "url('http://miriadna.com/desctopwalls/images/max/Snowy-bridge.jpg')");
+          $('body').css("background", "url('http://miriadna.com/desctopwalls/images/max/Snowy-bridge.jpg') no-repeat center center fixed");
         }
 
         $('body').css("background-size", "cover");
